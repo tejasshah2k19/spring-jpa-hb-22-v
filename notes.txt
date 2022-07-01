@@ -1,0 +1,44 @@
+spring boot --> 
+
+hibernate --> framework --> database 
+
+java --> sql --> minimal 
+
+
+DB framework --> hibernate --> ORM --> 
+
+hibernate[3+H:3] --> jpa[3] 
+
+
+create table - modify - alter 
+insert 
+select 
+update 
+delete 
+
+class 		<=> 		table 
+object 					row 
+save
+delete 
+
+
+spring starter app 
+	1) dev tools ,web 
+	2) postgres driver , starter jpa 
+
+class map table --> ORM 
+1) .xml 
+2  annotation 
+
+org.hibernate.dialect.PostgreSQL10Dialect
+ 
+ 
+@Entity
+@Table 
+
+@Id
+@GeneratedValue 
+@Column
+ 
+ 
+ 
