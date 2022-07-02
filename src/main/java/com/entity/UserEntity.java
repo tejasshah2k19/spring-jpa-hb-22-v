@@ -11,8 +11,8 @@ import javax.persistence.Table;
 @Table(name = "users")
 public class UserEntity {
 	@Id
-	@GeneratedValue
-	int userId;
+	@GeneratedValue // SEQ
+	Integer userId;
 //	@Column(name="fname")
 	String firstName;// first_name
 	String lastName;
@@ -21,13 +21,13 @@ public class UserEntity {
 	String email;
 	String password;
 
-	boolean active;
+	Boolean active;
 
-	public int getUserId() {
+	public Integer getUserId() {
 		return userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
 
@@ -71,12 +71,14 @@ public class UserEntity {
 		this.password = password;
 	}
 
-	public boolean isActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
+
+	 
 
 }
