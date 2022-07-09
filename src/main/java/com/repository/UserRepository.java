@@ -14,6 +14,6 @@ public interface UserRepository extends CrudRepository<UserEntity,Integer>{
 
 		@Query(value = "select * from users where active = :active",nativeQuery = true)
 		List<UserEntity> getAllUsersByActiveStatus(Boolean active);
-
+		UserEntity findByEmail(String email);
 }
 
